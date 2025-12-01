@@ -1,0 +1,9 @@
+{
+	"name": "adf-sp-de-pro",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "238405e7-9989-4638-a346-6e1fb32ff3d0",
+		"tenantId": "5bfa8a32-1d65-4505-a553-75be3387104c"
+	}
+}
