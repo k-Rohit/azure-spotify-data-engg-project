@@ -42,7 +42,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@{concat(\n  'SELECT * FROM ',\n  item().schema, '.', item().table,\n  ' WHERE ', item().cdc_col,\n  ' > ''',\n  if(\n    empty(item().from_date),\n    activity('last_cdc_copy1').output.value[0].cdc,\n    item().from_date\n  ),\n  ''''\n)}\n",
+										"value": "@{concat(\n  'SELECT * FROM ',\n  item().schema, '.', item().table,\n  ' WHERE ', item().cdc_column,\n  ' > ''',\n  if(\n    empty(item().from_date),\n    activity('last_cdc_copy1').output.value[0].cdc,\n    item().from_date\n  ),\n  ''''\n)}\n",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
